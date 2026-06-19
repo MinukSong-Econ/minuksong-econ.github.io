@@ -16,7 +16,7 @@ sidebar:
   phone:
   timezone:
   citizenship:
-  website: https://minuksong-econ.github.io
+  website:
   linkedin:
   xing:
   github:
@@ -70,10 +70,12 @@ projects:
   assignments:
     - title: "Teleworkability and Labor Market Resilience During COVID-19: Gender Differences in South Korea"
       link:
-      tagline: Chung Choe, Minuk Song, Koangsung Choi
+      authors: Chung Choe, Minuk Song, Koangsung Choi
+      status:
 
     - title: "Can Minimum Wage Increases Reduce Wage Inequality? Empirical Evidence from Korea"
       link:
-      tagline: Chung Choe, Yoonyoung Choi, Minuk Song, Hwanoong Lee
+      authors: Chung Choe, Yoonyoung Choi, Minuk Song, Hwanoong Lee
+      status:
 
 footer:
