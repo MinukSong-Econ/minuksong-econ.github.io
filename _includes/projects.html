@@ -1,4 +1,3 @@
-```html
 {% assign projects = site.data.data.projects %}
 {% if projects %}
 <section class="section projects-section">
@@ -6,42 +5,28 @@
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
     </span>
     {{ projects.title }}
   </h2>
 
   {% if projects.intro %}
   <div class="intro">
-    <p>{{ projects.intro }}</p>
+      <p>{{ projects.intro }}</p>
   </div><!--//intro-->
   {% endif %}
 
-  <ul>
-    {% for project in projects.assignments %}
-    <li>
-      {% if project.link %}
-      <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-      {% else %}
-      {{ project.title }}
-      {% endif %}
-
-      {% if project.authors %}
-      <br>
-      <em>{{ project.authors }}</em>
-      {% elsif project.tagline %}
-      <br>
-      <em>{{ project.tagline }}</em>
-      {% endif %}
-
-      {% if project.status %}
-      <br>
-      {{ project.status }}
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
+  {% for projects in projects.papers %}
+  <div class="item">
+    {% if projects.link %}
+      <li><a href="{{ projects.link }}">{{ projects.title }}</a></li>
+    {% else %}
+      <li>{{ projects.title }}</li>
+    {% endif %}
+    <div class="publication-authors">{{ projects.authors }}</div>
+    <div class="publication-conference">{{ projects.conference }}</div>
+  </div><!--//item-->
+  {% endfor %}
 
 </section><!--//section-->
 {% endif %}
-```
