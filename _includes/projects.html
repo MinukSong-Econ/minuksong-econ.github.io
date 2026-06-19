@@ -1,3 +1,4 @@
+```html
 {% assign projects = site.data.data.projects %}
 {% if projects %}
 <section class="section projects-section">
@@ -12,27 +13,35 @@
 
   {% if projects.intro %}
   <div class="intro">
-      <p>{{ projects.intro }}</p>
+    <p>{{ projects.intro }}</p>
   </div><!--//intro-->
   {% endif %}
 
-  {% for project in projects.assignments %}
-    <div class="item">
-
-      <span class="project-title">
-        {% if project.link %}
-        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-        {% else %}
-        {{ project.title }}
-        {% endif %}
-      </span>
-
-      {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
+  <ul>
+    {% for project in projects.assignments %}
+    <li>
+      {% if project.link %}
+      <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+      {% else %}
+      {{ project.title }}
       {% endif %}
 
-    </div><!--//item-->
-  {% endfor %}
+      {% if project.authors %}
+      <br>
+      <em>{{ project.authors }}</em>
+      {% elsif project.tagline %}
+      <br>
+      <em>{{ project.tagline }}</em>
+      {% endif %}
+
+      {% if project.status %}
+      <br>
+      {{ project.status }}
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
 
 </section><!--//section-->
 {% endif %}
+```
