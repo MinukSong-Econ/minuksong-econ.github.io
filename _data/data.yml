@@ -1,106 +1,85 @@
+```yml
 #
 # Be aware that even a small syntax error here can lead to failures in output.
 #
 
 sidebar:
-    position: left # position of the sidebar : left or right
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+  position: left
+  about: false
+  education: true
 
-    # Profile information
-    name: Minuk Song
-    tagline:      
-        Department of Economics 
-        
-        Konkuk University
-    avatar: #profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  # Profile information
+  name: Minuk Song
+  tagline: |
+    Department of Economics
+    Konkuk University
+  avatar:
 
-    # Sidebar links
-    email: zhqf4961@naver.com
-    phone:
-    timezone: 
-    citizenship:
-    website: 
-    linkedin: 
-    xing: 
-    github: 
-    telegram: 
-    gitlab:
-    bitbucket:
-    twitter: 
-    stack-overflow: 
-    codewars:
-    goodreads:
-    pdf: # http://www.africau.edu/images/default/sample.pdf
+  # Sidebar links
+  email: zhqf4961@naver.com
+  phone:
+  timezone: Asia/Seoul
+  citizenship:
+  website: https://minuksong-econ.github.io
+  linkedin:
+  xing:
+  github:
+  telegram:
+  gitlab:
+  bitbucket:
+  twitter:
+  stack-overflow:
+  codewars:
+  goodreads:
+  pdf:
 
-    interests:
-      title: Research Interests
-      info:
-        - item: Labor Economics
-          link:
+  interests:
+    title: Research Interests
+    info:
+      - item: Labor Economics
+        link:
 
-        - item: Applied Microeconomics
-          link:
-
-        - item: 
-          link:
+      - item: Applied Microeconomics
+        link:
 
 education:
-    title: Education
-    info:
+  title: Education
+  info:
+    - degree: Ph.D. in Economics, in progress
+      university: Konkuk University
+      time: 2026 - Present
+      details:
 
-      - degree: Ph.D., Economics (in progress)
-        university: Konkuk University
-        time: 2026 - present
-        details: 
-        
-      - degree: M.A., Economics
-        university: Konkuk University
-        time: 2024 - 2026
-        details: 
-        
-      - degree: B.A., Economics
-        university: Konkuk University
-        time: 2017 - 2024
-        details: 
-        
-projects:
-    title: Publications
-    intro:
-    papers:
-      - title: Reduced Working Hours and Human Capital Investment: Evidence from the 40-Hour Workweek System in South Korea
-        link: 
-        authors: Minuk Song, Jihye Park, Chung Choe (forthcomming)
-        conference: Economics Bulletin
-        
+    - degree: M.A. in Economics
+      university: Konkuk University
+      time: 2024 - 2026
+      details:
+
+    - degree: B.A. in Economics
+      university: Konkuk University
+      time: 2017 - 2024
+      details:
+
 publications:
-    title: Working papers
-    intro:
-    papers:       
-      #- title: Repayment Burdens of Student Loans for Korean Higher Education
-        #link: 
-        #authors: Jinyeong Kim, Yeogyoung Moon, & Chung Choe
-        #conference: 
+  title: Publications
+  intro:
+  papers:
+    - title: "Reduced Working Hours and Human Capital Investment: Evidence from the 40-Hour Workweek System in South Korea"
+      link:
+      authors: Minuk Song, Jihye Park, Chung Choe
+      conference: Economics Bulletin, forthcoming
 
-      - title: "Teleworkability and Labor Market Resilience During COVID-19: Gender Differences in South Korea"
-        link: 
-        authors: Chung Choe, Minuk Song, Koangsung Choi
-        conference: 
-        
-      - title: "Can Minimum Wage Increases Reduce Wage Inequality? Empirical Evidence from Korea"
-        link: 
-        authors: Chung Choe, Yoonyoung Choi, Minuk Song, Hwanoong Lee
-        conference: 
+projects:
+  title: Working Papers
+  intro:
+  assignments:
+    - title: "Teleworkability and Labor Market Resilience During COVID-19: Gender Differences in South Korea"
+      link:
+      tagline: Chung Choe, Minuk Song, Koangsung Choi
 
-# skills:
-    # title: Grants
-    # intro:
-    # papers:       
-      # - title: "National Research Foundation of Korea, &#34;Unveiling the Hidden Dynamics of Firm Responses to Employment Protection Legislation: Beyond the Average,&#34; Research Grant for Doctoral Students, 2024-2026 &#40;&#8361;40,000,000&#41;&#46;"
-        # link: 
-        # authors: 
-        # conference: 
-        
+    - title: "Can Minimum Wage Increases Reduce Wage Inequality? Empirical Evidence from Korea"
+      link:
+      tagline: Chung Choe, Yoonyoung Choi, Minuk Song, Hwanoong Lee
 
-
-footer: 
+footer:
+```
