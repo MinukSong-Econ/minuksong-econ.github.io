@@ -1,5 +1,3 @@
-```yml
-#
 # Be aware that even a small syntax error here can lead to failures in output.
 #
 
@@ -8,14 +6,12 @@ sidebar:
   about: false
   education: true
 
-  # Profile information
   name: Minuk Song
   tagline: |
     Department of Economics
     Konkuk University
   avatar:
 
-  # Sidebar links
   email: zhqf4961@naver.com
   phone:
   timezone: Asia/Seoul
@@ -38,7 +34,6 @@ sidebar:
     info:
       - item: Labor Economics
         link:
-
       - item: Applied Microeconomics
         link:
 
@@ -82,4 +77,3 @@ projects:
       tagline: Chung Choe, Yoonyoung Choi, Minuk Song, Hwanoong Lee
 
 footer:
-```
