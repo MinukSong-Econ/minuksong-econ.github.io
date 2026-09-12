@@ -16,3 +16,7 @@ $sidebar-order: 2;
 
 @import "skins/{{ site.theme_skin | default: 'blue' }}"; // skin
 @import "default"; // main partials
+
+.publications-section .item {
+  margin-bottom: 20px;
+}
