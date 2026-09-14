@@ -17,6 +17,7 @@ $sidebar-order: 2;
 @import "skins/{{ site.theme_skin | default: 'blue' }}"; // skin
 @import "default"; // main partials
 
-.publications-section .publications-list li {
+.publications-section .publications-list li:not(:last-child),
+.projects-section .publications-list li:not(:last-child) {
   margin-bottom: 20px;
 }
