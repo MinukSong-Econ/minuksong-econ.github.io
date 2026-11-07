@@ -1,4 +1,5 @@
-{% assign publications = site.data.data.publications %}
+{% assign publication_key = include.data_key | default: "publications" %}
+{% assign publications = site.data.data[publication_key] %}
 {% if publications %}
 <section class="section publications-section">
 
